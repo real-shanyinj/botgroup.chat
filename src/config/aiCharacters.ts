@@ -16,8 +16,8 @@ export const modelConfigs = [
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "ep-20250217191935-wzj8l",//豆包模型|火山引擎接入点（改成自己的）
-    apiKey: "DOUBAO_API_KEY",
+    model: "botgroupchat",//豆包模型|火山引擎接入点（改成自己的）
+    apiKey: "03012f41b4bc-e70a-4721-9efc-ea980bfca972",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
