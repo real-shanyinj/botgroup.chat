@@ -24,9 +24,9 @@ export const groups: Group[] = [
   },
   {
     id: 'group3',
-    name: '情感宣泄群',
+    name: '情绪群',
     description: '分析各种日常问题',
     isGroupDiscussionMode: true,
-    members: [ 'ai1', 'ai2', 'ai3'，'ai5‘],
+    members: [ 'ai1', 'ai2', 'ai3','ai5‘],
   }
 ];
