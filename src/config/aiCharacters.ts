@@ -7,7 +7,7 @@ export const modelConfigs = [
   },
   {
     model: "deepseek-v3",
-    apiKey: "DASHSCOPE_API_KEY",
+    apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
@@ -17,7 +17,7 @@ export const modelConfigs = [
   },
   {
     model: "ep-20250217191935-wzj8l",//豆包模型|火山引擎接入点（改成自己的）
-    apiKey: "ARK_API_KEY",
+    apiKey: "DOUBAO_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
@@ -35,6 +35,11 @@ export const modelConfigs = [
     apiKey: "DASHSCOPE_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
+  {
+    model: "kimi",//调度模型
+    apiKey: "KIMI_API_KEY", // 这里存储环境变量的 key 名称
+    baseURL: "https://ecmb.bdimg.com/tam-ogel/"
+  }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
 
@@ -151,6 +156,15 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       avatar: "/img/glm.gif",
       custom_prompt: `你是一个名叫"智谱"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["深度推理","数学","信息总结", "分析数据","文字游戏", "聊天"]
+    },   
+    { 
+      id: 'ai9', 
+      name: "Kimi智能助手", 
+      personality: "kimi",
+      model: modelConfigs[6].model,
+      avatar: "/-1772417172_-552089199_88_88.jpg",
+      custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      tags: ["深度推理", "编程", "文字游戏", "数学", "信息总结", "聊天"]
     }
   ];
 }
