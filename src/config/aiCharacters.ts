@@ -8,7 +8,7 @@ export const modelConfigs = [
   {
     model: "deepseek-v3",
     apiKey: "DEEPSEEK_API_KEY",
-    baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    baseURL: "https://api.deepseek.com"
   },
   {
     model: "hunyuan-standard",
@@ -36,9 +36,9 @@ export const modelConfigs = [
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "kimi",//调度模型
+    model: "kimi",
     apiKey: "KIMI_API_KEY", // 这里存储环境变量的 key 名称
-    baseURL: "https://ecmb.bdimg.com/tam-ogel/"
+    baseURL: "https://api.moonshot.cn/v1"
   }
 ] as const;
 export type ModelType = typeof modelConfigs[number]["model"];
