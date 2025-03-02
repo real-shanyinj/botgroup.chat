@@ -8,7 +8,7 @@ export const modelConfigs = [
   {
     model: "deepseek-reasoner",
     apiKey: "DEEPSEEK_API_KEY",
-    baseURL: "https://api.deepseek.com"
+    baseURL: "https://api.deepseek.com/v1"
   },
   {
     model: "hunyuan-standard",
@@ -140,7 +140,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
     { 
       id: 'ai7', 
       name: "DeepSeek", 
-      personality: "deepseek-r1",
+      personality: "deepseek-reasoner",
       model: modelConfigs[1].model,
       avatar: "/img/ds.svg",
       custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
