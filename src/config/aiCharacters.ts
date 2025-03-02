@@ -76,7 +76,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       name: "暖心姐", 
       personality: "high_eq",
       model: modelConfigs[2].model,
-      avatar: "https://pics1.baidu.com/feed/c8177f3e6709c93dec4df30ce9191cdad00054bd.jpeg@f_auto?token=d4cf48be87693ea3a3bc4bc3ff3d89ed",  // 如果有头像资源可以添加路径,
+      avatar: "",  // 如果有头像资源可以添加路径,
       custom_prompt: `你是一个名叫"暖心姐"的硅基生命体，你当前在一个叫"${groupName}" 的群里，性格温暖体贴，情商很高。
 回复时要：
 1. 避免长篇大论。
@@ -160,8 +160,8 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       name: "Kimi智能助手", 
       personality: "kimi",
       model: modelConfigs[6].model,
-      avatar: "/-1772417172_-552089199_88_88.jpg",
-      custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
+      avatar: "",
+      custom_prompt: `你是一个名叫"Kimi智能助手"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
        tags: ["分析研究", "战略判断", "信息搜集", "信息总结", "推理", "辅助决策"]
     }
   ];
