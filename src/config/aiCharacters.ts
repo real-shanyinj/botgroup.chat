@@ -63,7 +63,7 @@ export function shedulerAICharacter(message: string, allTags: string[]): AIChara
       avatar: "",
       custom_prompt: `你是一个群聊总结分析专家，你在一个聊天群里，请分析群用户消息和上文群聊内容
       1、只能从给定的标签列表中选择最相关的标签，可选标签：${allTags.join(', ')}。
-      2、请只返回标签列表，用逗号分隔，不要有其他解释, 不要有任何前缀。
+      2、请只返回标签列表，用逗号分隔，不要有解释, 不要有任何前缀。
       3、回复格式示例：文字游戏, 生活助手, 娱乐`
     }
 }
