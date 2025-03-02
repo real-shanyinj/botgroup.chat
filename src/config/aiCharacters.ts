@@ -6,7 +6,7 @@ export const modelConfigs = [
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "deepseek-reasoner",
+    model: "deepseek-chat",
     apiKey: "DEEPSEEK_API_KEY",
     baseURL: "https://api.deepseek.com/v1"
   },
