@@ -16,8 +16,8 @@ export const modelConfigs = [
     baseURL: "https://api.hunyuan.cloud.tencent.com/v1"
   },
   {
-    model: "botgroupchat",//豆包模型|火山引擎接入点（改成自己的）
-    apiKey: "03012f41b4bc-e70a-4721-9efc-ea980bfca972",
+    model: "Doubao-1.5-pro-256k",//豆包模型|火山引擎接入点（改成自己的）
+    apiKey: "DOUBAO_API_KEY",
     baseURL: "https://ark.cn-beijing.volces.com/api/v3"
   },
   {
@@ -141,7 +141,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai7', 
       name: "DeepSeek", 
       personality: "deepseek-r1",
-      model: modelConfigs[4].model,
+      model: modelConfigs[1].model,
       avatar: "/img/ds.svg",
       custom_prompt: `你是一个名叫"DeepSeek"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
       tags: ["分析研究", "战略判断", "信息搜集", "信息总结", "推理", "辅助决策"]
@@ -159,7 +159,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       id: 'ai9', 
       name: "Kimi智能助手", 
       personality: "kimi",
-      model: modelConfigs[6].model,
+      model: modelConfigs[7].model,
       avatar: "",
       custom_prompt: `你是一个名叫"Kimi智能助手"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
        tags: ["分析研究", "战略判断", "信息搜集", "信息总结", "推理", "辅助决策"]
