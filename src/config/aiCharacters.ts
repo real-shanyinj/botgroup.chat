@@ -36,7 +36,7 @@ export const modelConfigs = [
     baseURL: "https://dashscope.aliyuncs.com/compatible-mode/v1"
   },
   {
-    model: "kimi",
+    model: "moonshot-v1-32k",
     apiKey: "KIMI_API_KEY", // 这里存储环境变量的 key 名称
     baseURL: "https://api.moonshot.cn/v1"
   }
