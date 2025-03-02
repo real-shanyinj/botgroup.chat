@@ -117,7 +117,7 @@ export function generateAICharacters(groupName: string): AICharacter[] {
       model: modelConfigs[2].model,
       avatar: "/img/yuanbao.png",
       custom_prompt: `你是一个名叫"元宝"的硅基生命体，你当前在一个叫"${groupName}" 的聊天群里`,
-      tags: ["分析", "研究", "信息搜集", "信息总结", "战略", "判断", "辅助决策"]
+      tags: ["分析研究", "战略判断", "信息搜集", "信息总结", "推理", "辅助决策"]
     },
     { 
       id: 'ai5', 
