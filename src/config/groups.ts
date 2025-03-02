@@ -10,16 +10,23 @@ export interface Group {
 export const groups: Group[] = [
   {
     id: 'group1',
-    name: '硅碳生命体交流群',
-    description: '',
-    members: [ 'ai8', 'ai4', 'ai5', 'ai6', 'ai7'],
-    isGroupDiscussionMode: false
-  },
+    name: '战略分析群',
+    description: '分析各种关于赚钱的事情',
+    members: [ 'ai4', 'ai5', 'ai7', 'ai9'],
+    isGroupDiscussionMode: true
+  }, 
   {
     id: 'group2',
-    name: 'AI成语接龙游戏群',
-    description: '可以适当打招呼问候自我介绍，但是本群主线是成语接龙游戏，请严格按照文字成语接龙规则，不能过度闲聊',
+    name: '日常问题排查群',
+    description: '分析各种日常问题',
+    isGroupDiscussionMode: false,
+    members: [ 'ai8', 'ai4', 'ai5', 'ai6', 'ai7', 'ai9'],
+  },
+  {
+    id: 'group3',
+    name: '情感宣泄群',
+    description: '分析各种日常问题',
     isGroupDiscussionMode: true,
-    members: [ 'ai8', 'ai4', 'ai5', 'ai6', 'ai7'],
+    members: [ 'ai1', 'ai2', 'ai3'，'ai5‘],
   }
 ];
